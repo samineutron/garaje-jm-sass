@@ -1,0 +1,92 @@
+@use "variables" as v;
+
+@mixin button {
+    padding: 5px 10px;
+    width: 14rem;
+    height: 2.6rem;
+    border-radius: 4px;
+    box-shadow: v.$shadow-soft;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    button {
+        @include button();
+        transition: all ease 0.25s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+        color: v.$white-primary;
+        }
+    }
+
+    .agendar-btn {
+        background-color: v.$very-dark-primary;
+    }
+
+    .servicios-btn {
+        background-color: v.$dark-primary;
+    }
+}
+
+
+button a {
+    text-decoration: none;
+}
+
+.card {
+    margin: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+
+    img {
+        object-fit: contain;
+        padding: 2rem;
+    }
+}
+
+.seccion-servicios {
+    .cards-container {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.seccion-basicos {
+
+    .card-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-img-container {
+        height: 65%;
+    }
+}
+
+.servicios-avanzados {
+    .card {
+        height: 16rem;
+    }
+}
+
+.main-img-container {
+    text-align: center;
+    background-color: v.$primary-color;
+    width: auto;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    max-width: 950px;
+    object-fit: cover;
+}

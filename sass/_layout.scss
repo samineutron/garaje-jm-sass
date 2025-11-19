@@ -1,0 +1,99 @@
+@use "variables" as v;
+
+header {
+    width: 100vw;
+    height: auto;
+    transition: all ease 0.5s;
+
+    .fixed-top {
+        background-color: v.$dark-primary;
+        height: 5rem;
+
+        a {
+            color: v.$primary-color;
+        }
+
+        .container-fluid {
+            background-color: v.$dark-primary;
+
+            .navbar-collapse {
+                transition: all ease 0.5s;
+            }
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-left: 1rem;
+            text-shadow: v.$shadow-title;
+            color: v.$primary-color;
+        }
+    
+    
+    }
+}
+
+
+
+main {
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 4rem;
+
+    .bloque-main {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.home-main {
+    text-align: center;
+}
+
+.main-servicios {
+    margin-top: 7rem;
+
+    h1 {
+        font-size: 55px;
+        text-shadow: v.$shadow-soft;
+        color: v.$primary-color;
+    }
+}
+
+.agendar-main {
+    margin-top: 5rem;
+}
+
+
+
+footer {
+    background-color: v.$dark-primary;
+    color: v.$white-primary;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    margin-top: 3rem;
+
+    h3 {
+        color: v.$white-primary;
+    }
+
+    .footer__div {
+        width: 100%;
+        padding: 0;
+    }
+
+    .info-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .copyright {
+        padding-top: 1rem;
+        margin-bottom: 0;
+    }
+}

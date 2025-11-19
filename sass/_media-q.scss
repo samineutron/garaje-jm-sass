@@ -1,0 +1,39 @@
+@media screen and (min-width: 1100px) {
+  .btn-container {
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .seccion-multimedia {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .multimedia-img-container {
+      height: 100%;
+      width: 500px;
+      max-width: 45vw;
+      
+      img {
+        margin-bottom: 0;
+      }
+    }
+
+    .iframe-container {
+      overflow: hidden;
+      height: 100%;
+      width: 500px;
+      max-width: 45vw;
+    }
+
+  }
+
+  .info-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

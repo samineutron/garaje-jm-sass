@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+* {
+    border: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 0rem;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: v.$shadow-title;
+    color: v.$primary-color;
+    padding: 1rem 1.5rem;
+}
+
+h2 {
+    font-size: x-large;
+    color: v.$very-dark-primary;
+}
