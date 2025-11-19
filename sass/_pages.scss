@@ -64,7 +64,8 @@
     .btn {
         background-color: v.$dark-primary;
         color: v.$white-primary;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0rem;
+        transition: all ease 0.25s;
     }
 
     img {

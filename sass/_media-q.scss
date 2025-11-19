@@ -1,10 +1,13 @@
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .btn-container {
     justify-content: center;
     flex-direction: row;
     column-gap: 1rem;
   }
+}
 
+@media screen and (min-width: 1100px) {
+  
   .seccion-multimedia {
     width: auto;
     height: auto;
@@ -37,3 +40,4 @@
     justify-content: space-around;
   }
 }
+

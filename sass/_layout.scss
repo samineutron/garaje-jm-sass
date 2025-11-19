@@ -4,42 +4,42 @@ header {
     width: 100vw;
     height: auto;
     transition: all ease 0.5s;
-
-    .fixed-top {
-        background-color: v.$dark-primary;
-        height: 5rem;
-
-        a {
-            color: v.$primary-color;
-        }
-
-        .container-fluid {
-            background-color: v.$dark-primary;
-
-            .navbar-collapse {
-                transition: all ease 0.5s;
-            }
-        }
-
-        .navbar-brand {
-            font-size: 30px;
-            font-weight: 700;
-            letter-spacing: 3px;
-            margin-left: 1rem;
-            text-shadow: v.$shadow-title;
-            color: v.$primary-color;
-        }
-    
-    
-    }
+    min-width: 320px;
 }
 
+.fixed-top {
+    background-color: v.$dark-primary;
+    height: 5rem;
 
+    a {
+        color: v.$primary-color;
+    }
+
+    .container-fluid {
+        background-color: v.$dark-primary;
+
+        .navbar-collapse {
+            transition: all ease 0.5s;
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.4px;
+        margin-left: 0.5rem;
+        font-family: "Rubik 80s Fade", system-ui;
+        text-shadow: v.$shadow-title;
+        color: v.$white-primary;
+
+    }
+}
 
 main {
     box-sizing: border-box;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 4.8rem;
 
     .bloque-main {
         padding-top: 2rem;
@@ -64,8 +64,6 @@ main {
 .agendar-main {
     margin-top: 5rem;
 }
-
-
 
 footer {
     background-color: v.$dark-primary;

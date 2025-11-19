@@ -16,8 +16,9 @@ h1 {
 }
 
 h2 {
-  font-size: x-large;
+  font-size: 30px;
   color: #185234;
+  margin: 1rem 0rem;
 }
 
 .btn-container {
@@ -51,6 +52,13 @@ button a {
   text-decoration: none;
 }
 
+form .btn {
+  margin-top: 1.5rem;
+}
+form .btn:hover {
+  transform: scale(1.1);
+}
+
 .card {
   margin: 1.5rem;
   padding-left: 0;
@@ -61,11 +69,21 @@ button a {
   padding: 2rem;
 }
 
+.card-servicios .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0rem;
+}
+
 .seccion-servicios .cards-container {
   height: 100%;
   width: 100%;
 }
 
+.seccion-basicos {
+  padding: 30px 1.2rem;
+}
 .seccion-basicos .card-body {
   display: flex;
   justify-content: center;
@@ -75,6 +93,9 @@ button a {
   height: 65%;
 }
 
+.servicios-avanzados {
+  padding: 30px 1.2rem;
+}
 .servicios-avanzados .card {
   height: 16rem;
 }
@@ -88,7 +109,7 @@ button a {
 .banner-img {
   width: 100%;
   height: 100%;
-  max-width: 950px;
+  max-width: 650px;
   object-fit: cover;
 }
 
@@ -96,33 +117,37 @@ header {
   width: 100vw;
   height: auto;
   transition: all ease 0.5s;
+  min-width: 320px;
 }
-header .fixed-top {
+
+.fixed-top {
   background-color: #217047;
   height: 5rem;
 }
-header .fixed-top a {
+.fixed-top a {
   color: #3DD486;
 }
-header .fixed-top .container-fluid {
+.fixed-top .container-fluid {
   background-color: #217047;
 }
-header .fixed-top .container-fluid .navbar-collapse {
+.fixed-top .container-fluid .navbar-collapse {
   transition: all ease 0.5s;
+  padding-bottom: 0.5rem;
 }
-header .fixed-top .navbar-brand {
+.fixed-top .navbar-brand {
   font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 3px;
-  margin-left: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  margin-left: 0.5rem;
+  font-family: "Rubik 80s Fade", system-ui;
   text-shadow: 1px 2px 2px #2a2727;
-  color: #3DD486;
+  color: #f1fff8;
 }
 
 main {
   box-sizing: border-box;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 4.8rem;
 }
 main .bloque-main {
   padding-top: 2rem;
@@ -222,7 +247,8 @@ footer .copyright {
 .agendar-main .btn {
   background-color: #217047;
   color: #f1fff8;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
+  transition: all ease 0.25s;
 }
 .agendar-main img {
   object-fit: contain;
@@ -238,12 +264,14 @@ footer .copyright {
   object-fit: contain;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 900px) {
   .btn-container {
     justify-content: center;
     flex-direction: row;
     column-gap: 1rem;
   }
+}
+@media screen and (min-width: 1100px) {
   .seccion-multimedia {
     width: auto;
     height: auto;
